@@ -27,7 +27,7 @@ vim_base_pkgs = value_for_platform(
 )
 
 vim_base_pkgs.each do |vim_base_pkg|
-  package vim_base_pkgs
+  package vim_base_pkg
 end
 
 node[:vim][:extra_packages].each do |vimpkg|
