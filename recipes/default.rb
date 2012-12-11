@@ -32,4 +32,6 @@ end
 
 node[:vim][:extra_packages].each do |vimpkg|
   package vimpkg
+  retries 5
+  retry_delay 10
 end
